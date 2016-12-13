@@ -1,0 +1,85 @@
+* { 
+  
+}
+
+body {
+    margin:0;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 869px;
+    width: 100%;
+   
+    
+}
+
+.navbar-header{
+    margin-top: 1.5%;
+    float: right;
+    
+}
+.navbar-brand {
+    padding: 0;
+    width: 250px;
+    margin-top: 2.5%;   
+}
+
+#logo {
+     margin-left: 9%;
+     float: left;
+}
+
+#logoText {
+    margin-top: 4%;
+    float: left;
+    color: gold;
+    font-size: 26px;
+    font-family: 'Pacifico', cursive;
+    }
+
+#logoText:hover {
+    color: yellow;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: gold;
+}
+
+.navbar-header .navbar-toggle:hover .icon-bar {
+    background-color: yellow;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 82px;
+}
+
+
+.btn.outline {
+	background: none;
+	padding: 12px 22px;
+}
+
+#tdb{
+    margin-top: 15%;
+    color: white;
+    margin-right:20px;
+    border: 1px solid white;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#dd{
+ 
+    margin-top: 1%;
+    margin-left: 3%;
+
+}
+
+.dropdown-menu{
+ margin-left: 0%;      
+}
