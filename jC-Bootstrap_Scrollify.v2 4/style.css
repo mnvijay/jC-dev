@@ -6,6 +6,7 @@ html,body{
     width: 100%;
     height:100%;
     margin:0;
+    background-color: rgba(219, 134, 35, 0.95 );
    
 }
 
@@ -14,12 +15,12 @@ html,body{
     background-size: 100% 50%, 100% 100%;
     background-attachment: scroll;
     height: 100vh;
-   
+    position:
 }
 
 #con2{
-    margin-top:;
-    background-color: rgba(247, 144, 0, 0.95 );
+    margin-top:-4px;
+    background-color: rgba(219, 134, 35, 0.95 );
     height: 100vh;
     z-index: 1;
 }
@@ -55,25 +56,33 @@ html,body{
     margin-top: 20px ;
 
 }
-
-#phone1{
-    margin-top:8% ;
-  
+#phoneBox{
+    margin-top: 7%;
+    height: 550px; 
 }
 
-#bigPhone2{
-    position: absolute;
-    margin-left: 42%;
-    margin-top: 15%;
-    z-index: 1;
+#phone1{
+     position: absolute;
+     z-index: 10;
+     top: 10px;
+     left:100px;
+
 }
 
 #smallPhone3{
     position: absolute;
-    margin-top:22% ;
-    margin-left:30% ;
-    z-index: 0;
+    z-index: 9; 
+    margin-top: 70px;
+    margin-left: 10px;
 }
+
+#bigPhone2{
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 15%;
+    z-index: 1;
+}
+
 
 #gigPhone1{
     position: absolute;
@@ -89,29 +98,63 @@ html,body{
     z-index: 0;
 }
 
+#section2hp{
+    height:100%;
+    width:90%;
+    margin-top: 27%;
+    
+}
+
 .section2Header{
     font-family: 'Roboto Slab', serif;
     color: white;
     font-size:30px ;
-    margin-top: 30%;
     text-align: right;
-    margin-right: 24% ;
+    width: 50%;
+    margin-left:45% ;
 }
 
 .section2p{
     font-family: 'Roboto Slab', serif;
-    color: black;
+    color: white;
     font-size:20px ;
     text-align: right;
     font-weight: bold;
-    margin-right:24%;
-    margin-top: 5% ;
+    margin-top: 3% ;
     letter-spacing: 1px;
-    width:600x ;
+    width:660px;
+    margin-left:41%;
 }
 
+#section5hp{
+    height:100%;
+    width:90%;
+    margin-top: 17%;
+    
+}
+
+.section5Header{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:30px ;
+    text-align: right;
+    width: 50%;
+    margin-left:55% ;
+}
+
+.section5p{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:20px ;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 3% ;
+    letter-spacing: 1px;
+    width:660px;
+    margin-left:51%;
+}
 #welcomeTextBox{
-    margin-top:150px ;
+    margin-top:11% ;
 }
 
 #welcomeText{
@@ -148,8 +191,13 @@ html,body{
     margin-top: 300px ;
 }
 
-#para6{
-    
+.artists{
+    content:url("images/ArtistsPhone1.png");
+}
+
+.bands{
+    content:url("images/BandsPhone2.png");
+    data-aos="slide-right"
 }
 
 ::-webkit-scrollbar { 
@@ -431,5 +479,21 @@ html,body{
   }
 }
 
-
 /* Carousel Styling Ends here*/
+
+#pinContainer {
+							width: 100%;
+							height: 100%;
+							overflow: hidden;
+							-webkit-perspective: 1000;
+							        perspective: 1000;
+						}
+						#slideContainer {
+							width: 500%; /* to contain 5 panels, each with 100% of window width */
+							height: 100%;
+						}
+						.panel {
+							height: 100%;
+							width: 20%; /* relative to parent -> 20% of 500% = 100% of window width */
+							float: left;
+						}

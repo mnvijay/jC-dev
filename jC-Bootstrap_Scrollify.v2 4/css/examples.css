@@ -1,9 +1,7 @@
 /*
 	Containers
 */
-#content-wrapper, #example-wrapper {
-	height: 100%;
-}
+
 .scrollContainer {
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -107,12 +105,10 @@ section#titlechart #description ol {
 
 
 section.demo * {
-	font-size: 13px;
+	
 }
 section.demo {
-	font-size: 0;
-	text-align: center;
-	background-image: url("../img/example_bg_v.png");
+	
 }
 section.demo.fullheight {
 	min-height: 100%;
@@ -992,11 +988,9 @@ a.viewsource:before {
 	background-image: none;
 }
 .demo#section-slides .panel, .demo#section-wipes .panel {
-	background-image: url("../img/example_bg_spacer_v.gif");
+	 background-color: rgba(219, 134, 35, 0.95 );
 }
-.demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
-	background-image: url("../img/example_bg_spacer_h.gif");
-}
+
 .demo#section-slides .panel > b, .demo#section-wipes .panel > b {
 	font-size: 15px;
 	color: white;

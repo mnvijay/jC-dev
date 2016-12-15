@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
     
     <meta charset="utf-8">
@@ -11,11 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="animate.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style_nav.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/magic.css">
     <link rel="stylesheet" type="text/css" href="css/component.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/examples.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+     <link href="style.css" rel="stylesheet" type="text/css">
     
     
     
@@ -36,15 +39,21 @@
     <script src="js/horizontal_modernizr.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script>
     
-    <script src="scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-   
+    
+	<script type="text/javascript" src="js/highlight.pack.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
      
 </head>
     
 <body>
     
-        <section class="sections" id="section1">
+ <section class="sections" id="section1">
             <div id="con1" class="container-fluid">
 
                 <!-- Contains Brand Name and the download button -->
@@ -63,16 +72,13 @@
                  <!-- Welcome Text with image -->  
                 <div class="row">
 
-                 <div  class="col-lg-6">
-                     <div id="phone1">
-                                    <img data-aos-offset="850" data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
+                    <div id="phoneBox" class="col-lg-4 col-lg-offset-2">
+                        <img id="phone1" data-aos="slide-right" data-aos-offset="960" data-aos-delay="200"  src="images/phone.png" height="500px" width="330px">
+                        <img data-aos="slide-left" data-aos-delay="200" data-aos-offset="900" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">
+                    </div>
 
-                                    <img data-aos="slide-left" data-aos-offset="850" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                    </div>
-                </div>
-
-                    <div id="welcomeTextBox" class="col-lg-4 col-lg-offset-1">
-                        <h4 id="welcomeText">Artists, <br>
+                    <div id="welcomeTextBox"  class="col-lg-4">
+                        <h4  id="welcomeText">Artists, <br>
                         We present you <br>
                         What you wish existed.
                         </h4>
@@ -81,162 +87,82 @@
                 </div>     
             </div>
 </section>
-        <section class="sections" id="section2">
+    
+  <section class="demo" id="section-slides">
+					<div id="pinContainer">
+						<div id="slideContainer">
+                            
+							<section class="panel">
+								<div class="row">
 
-            <div id="con2" class="container-fluid">
+                                    <div id="section2hp" data-aos="fade-left" data-aos-delay="500" data-aos-offset="500" class="col-lg-8">
 
-                <br>
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#myCarousel" data-slide-to="1"></li>
-                          <li data-target="#myCarousel" data-slide-to="2"></li>
-                          <li data-target="#myCarousel" data-slide-to="3"></li>
-                          <li data-target="#myCarousel" data-slide-to="4"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-
-                            <div class="item active">
-
-                                  <div class="row">
-
-                                    <div  class="col-lg-6">
-                                    <img data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
-
-                                    <img data-aos="slide-left" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                    </div>
-
-                                    <div id="section2hp"  class="col-lg-6">
-
-                                    <h3 id ="header1" class="section2Header">One App for everything that<br> you were looking for.</h3>
-                                    <p id ="para1" class="section2p">JamCulture strives hard to bring like minded & skilled musicians together. Providing a platform and services based on your requirements.</p>
+                                        <h3 class="section2Header">One App for everything that<br> you were looking for.</h3>
+                                    <p  class="section2p">JamCulture strives hard to bring like minded & skilled     musicians together. Providing a platform  and<br> services based on your requirements.</p>
 
                                       </div>
 
                                 </div>
-                            </div>
+							</section>            
+							<section class="panel">
+								<div  class="row">
 
-                            <div class="item">
-                                <div class="row">
+                                    <div id="section2hp" data-aos="fade-left" data-aos-delay="300" data-aos-offset="1500" class="col-lg-8">
 
-                                        <div  class="col-lg-4">
+                                        <h3 id = "artist"  class="section2Header">Artists out there, <br>JamCulture gets it all covered.</h3>
+                                    <p class="section2p">This is the place to discover and  be discovered by artists around you. Exhibit yourself and start exploring your opportunities here.</p>
 
-                                            <img data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
+                                      </div>
 
-                                            <img data-aos="slide-left" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                        </div>
-
-                                        <div id="section2hp"  class="col-lg-8">
-
-                                            <h3 id ="header2" class="section2Header"><strong>Artists</strong> out there, <br>JamCulture gets it all covered</h3>
-                                            <p id ="para2" class="section2p">This is the place to discover & be discovered by artists around you.<br> Exhibit yourself and start exploring your opportunities here. </p>
-
-                                        </div>
                                 </div>
-                            </div>
+							</section>
+							<section class="panel">
+									<div class="row">
+
+                                    <div id="section2hp" data-aos="fade-left" data-aos-delay="300" data-aos-offset="3000" class="col-lg-8">
+
+                                        <h3 class="section2Header">Bands, its time to stop looking<br> for a manager</h3>
+                                    <p  class="section2p">Keep your bandmates connected by creating a band profile and build yours by updating your works and let the opportunity come to you.</p>
+
+                                      </div>
+
+                                </div>
+							</section>
+							<section class="panel">
+									<div class="row">
+
+                                    <div id="section2hp" data-aos="fade-left" data-aos-delay="300" data-aos-offset="4250" class="col-lg-8">
+
+                                        <h3 class="section2Header">PlayRoom, place where you let your creativity play around.</h3>
+                                    <p  class="section2p">Be it an artist or band, practice and create the grooves, explore all the JamRooms, Recording studios<br> around you in the PlayRoom section.</p>
+
+                                      </div>
+
+                                </div>
+							</section>
+                            <section class="panel">
+									<div class="row">
+
+                                    <div id="section5hp" data-aos="fade-up" data-aos-delay="300" data-aos-offset="4250" class="col-lg-8">
+
+                                        <h3 class="section5Header">Gigs, explore them right from the app and find the one that suits you.</h3>
+                                    <p  class="section5p">Cutting out the intermediates, we let you directly contact the spaces/people who are looking for you. So that is it. Start your journey with us and lets break it all.</p>
+
+                                      </div>
+
+                                </div>
+							</section>
                             
-                            <div class="item">
-                                <div class="row">
-
-                                    <div  class="col-lg-4">
-
-                                        <img data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
-
-                                        <img data-aos="slide-left" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                    </div>
-
-                                     <div id="section2hp"  class="col-lg-6 col-lg-offset-1">
-
-                                    <h3 id ="header3" class="section2Header"><strong>Bands</strong> its time to stop looking <br> for a manager.</h3>
-                                    <p id ="para3" class="section2p">Keep your bandmates connected by creating a band profile, build your profile by updating your works<br> and let the opportunity come to you.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                              
-                            <div class="item">
-                                <div class="row">
-
-                                        <div  class="col-lg-4">
-
-                                            <img data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
-
-                                            <img data-aos="slide-left" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                        </div>
-
-                                        <div id="section2hp"  class="col-lg-7 col-lg-offset-1">
-
-                                            <h3 id ="header4" class="section2Header"><strong>Playrooom</strong> place where you let your<br> creativity play around</h3>
-                                            <p id ="para4" class="section2p">Be it an artist or a band, practice and create new grooves. Explore all the JamRooms, Recording Studios around you in the playroom section.</p>
-
-                                        </div>
-                              </div>
-                            </div>
-                            
-                            <div class="item">
-                                <div class="row">
-
-                                    <div  class="col-lg-3">
-
-                                        <img data-aos="slide-right" data-aos-delay="600" id="bigPhone2" src="images/Big_phone2.png" height="484px" width="320px">
-
-                                        <img data-aos="slide-left" data-aos-delay="600" id="smallPhone3" src="images/small_phone3.png" height="400px" width="280px">    
-                                    </div>
-
-                                    <div id="section2hp"  class="col-lg-7 col-lg-offset-2" >
-
-                                        <h3 id ="header5" class="section2Header"><strong>Gigs, </strong> explore them right from the<br> app and find the one that suits you.</h3>
-                                        <p id ="para5" class="section2p">Cutting out the intermediates, we let you directly contact<br> the spaces/people who are looking for you. So that is it, start your journey us and lets break it all.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                          
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-        </div>
-        </div>
-</section>
-        <section class="sections" id="section3">
-        
-        <div id="con3" class="container-fluid">
+						</div>
+					</div>
+				</section>
+			
+	
     
-            <div class="row">
-            
-                    <div  class="col-lg-6">
-                    
-                        <img data-aos="slide-right" data-aos-delay="600" id="gigPhone1" src="images/lastPhone1.png" height="484px" width="320px">
-                     
-                        <img data-aos="slide-left" data-aos-delay="600" id="gigPhone2" src="images/lastPhone2.png" height="400px" width="260px">    
-                    </div>
-                
-                    <div id="section2hp"  class="col-lg-6">
-                    
-                        <h3 id ="header6" class="section2Header">You can also post a gig and let the artists know that you are looking for them.</h3>
-                        <p id ="para6" class="section2p">Personlaize your own card to post an AD and find Bands/Artists according to your requirements through JamCulture. So look out for your favourite bands and contact them directly</p>
-                        
-                    </div>
-            </div>
-        </div>
-    </section>
-           
-                
+     <script src="js/dots.js"></script>       
      <script src="js/transitions.js"></script>
      <script src="js/jq-vertical-dot-nav.js"></script> 
-    <script src="js/dots.js"></script>
+   
     <script src="js/horizontal_dots.js"></script>
 		<script>
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
