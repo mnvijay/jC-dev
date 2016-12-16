@@ -57,17 +57,81 @@ $(document).ready(function(){ // wait for document ready
 					.setClassToggle("#smallPhone3", "bands") // add class toggle
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
+    
+      new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
+					.setClassToggle("#phone1", "playRoom") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
+					.setClassToggle("#phone1", "gigs") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
     	
 	// build tween
 	var tween = new TimelineMax()
-		.to("#smallPhone3", 1, {x: "+=110"});
+		.to("#smallPhone3", 1, {x: "+=55"});
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
                     .setTween(tween)
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
     
+    	var tween1 = new TimelineMax()
+		.to("#phone1", 1, {x: "-=55"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
+                    .setTween(tween1)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
     
+    
+    var tween2 = new TimelineMax()
+		.to("#smallPhone3", 1, {x: "-=55"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
+                    .setTween(tween2)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+    var tween3 = new TimelineMax()
+		.to("#phone1", 1, {x: "+=55"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
+                    .setTween(tween3)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+      var tween4 = new TimelineMax()
+		.to("#smallPhone3", 1, {x: "+=55"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
+                    .setTween(tween4)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+    var tween5 = new TimelineMax()
+		.to("#phone1", 1, {x: "-=55"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
+                    .setTween(tween5)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+       var tween6 = new TimelineMax()
+		.to("#smallPhone3", 1, {y: "+=130"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
+                    .setTween(tween6)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+    
+    var tween7 = new TimelineMax()
+		.to("#phone1", 1, {y: "+=130"});
+		
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
+                    .setTween(tween7)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
     
     
 	});
