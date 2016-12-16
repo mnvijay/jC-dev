@@ -29,42 +29,44 @@ $(document).ready(function(){ // wait for document ready
 								})
 								.setPin("#pinContainer")
 								.setTween(wipeAnimation)
-								.addIndicators() // add indicators (requires plugin)
+								 // add indicators (requires plugin)
 								.addTo(controller);
     
     new ScrollMagic.Scene({
         duration: 6000,  // the scene should last for a scroll distance of 100px
                // start this scene after scrolling for 50px
     })
-    .setPin("#phone1") // pins the element for the the scene's duration
-    .addIndicators()
+    .setPin("#bigPhone1") // pins the element for the the scene's duration
+    
     .addTo(controller); 
     
     new ScrollMagic.Scene({
         duration: 6000,  // the scene should last for a scroll distance of 100px
                // start this scene after scrolling for 50px
     })
-    .setPin("#smallPhone3") // pins the element for the the scene's duration
-    .addIndicators()
+    .setPin("#smallPhone2") // pins the element for the the scene's duration
+   
     .addTo(controller);
     
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+    
     new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"1000"})
-					.setClassToggle("#phone1", "artists") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+					.setClassToggle("#bigPhone1ScreenArtists", "bigPhone1ScreenArtists1") // add class toggle
+                    .addIndicators()
 					.addTo(controller);
     
     new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
 					.setClassToggle("#smallPhone3", "bands") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     
       new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
 					.setClassToggle("#phone1", "playRoom") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
 					.setClassToggle("#phone1", "gigs") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+					
 					.addTo(controller);
     	
 	// build tween
@@ -73,7 +75,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
                     .setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     
     	var tween1 = new TimelineMax()
@@ -81,7 +83,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
                     .setTween(tween1)
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     
     
@@ -90,7 +92,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
                     .setTween(tween2)
-					.addIndicators() // add indicators (requires plugin)
+		
 					.addTo(controller);
     
     var tween3 = new TimelineMax()
@@ -98,7 +100,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
                     .setTween(tween3)
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     
       var tween4 = new TimelineMax()
@@ -106,7 +108,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
                     .setTween(tween4)
-					.addIndicators() // add indicators (requires plugin)
+					
 					.addTo(controller);
     
     var tween5 = new TimelineMax()
@@ -114,7 +116,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
                     .setTween(tween5)
-					.addIndicators() // add indicators (requires plugin)
+		
 					.addTo(controller);
     
        var tween6 = new TimelineMax()
@@ -122,7 +124,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
                     .setTween(tween6)
-					.addIndicators() // add indicators (requires plugin)
+	
 					.addTo(controller);
     
     var tween7 = new TimelineMax()
@@ -130,7 +132,7 @@ $(document).ready(function(){ // wait for document ready
 		
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
                     .setTween(tween7)
-					.addIndicators() // add indicators (requires plugin)
+				
 					.addTo(controller);
     
     
