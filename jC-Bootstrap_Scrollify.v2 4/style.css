@@ -126,7 +126,7 @@
     position: absolute;
     width: 400px;
     left:25%;
-    height: 55%;
+    height: 440px;
     top:13%;
     z-index: 8;
 }
@@ -178,7 +178,6 @@ html,body{
 }
 
 #con1{
-
     background: url("images/waves.png") no-repeat bottom,url("images/background.jpg") no-repeat;
     background-size: 100% 50%, 100% 100%;
     background-attachment: scroll;
@@ -196,14 +195,14 @@ html,body{
 #con3{
     margin-top: 275%;
     background: url("images/lastWave.png") no-repeat bottom;
-    background-size:100% 97%;
+    background-size:100% 90%;
     background-attachment: scroll;
     height: 100vh;
     z-index: 100;
 }
 
 #con4{
-    margin-top: 0%;
+    margin-top: -10%;
     height: 80vh;
     z-index: 100;
 }
@@ -211,7 +210,7 @@ html,body{
 #logoText{
     margin-top:25px ;
     margin-left: 15px;
-    color: gold;
+    color: white;
     font-size: 26px;
     font-family: 'Pacifico', cursive;
 }
@@ -251,7 +250,7 @@ html,body{
 }
 
 #tryJc{
-    background: orange;
+    background: none;
     color: white;
     font-size: 17px;
     border: 1px solid white;
@@ -262,6 +261,10 @@ html,body{
     border-radius: 82px;
     float:right;
     margin-top: 20px ;
+}
+
+#tryJc:hover{
+    background: orange;
 }
 
 #phoneBox{
@@ -402,8 +405,7 @@ html,body{
 #footer{
 	background-color: #422b25;
     background-position: bottom;
-	box-shadow: 50px 42px 64px 59px #422b25, inset 0 1px 3px 0 rgba(0, 0, 0, 1);
-    
+	box-shadow: 50px 42px 64px 59px #422b25, inset 0 1px 50px 0 rgba(0, 0, 0, 0.5);
     height: 230px;
     z-index: 10;
     margin-top: 15%;
@@ -480,10 +482,6 @@ display: inline-block;
     cursor:text;
 }
 
-#tryJc:hover{
-    background: green;
-}
-
 #header6{
     margin-top: 300px ;
 }
@@ -499,6 +497,7 @@ display: inline-block;
 #slideContainer {
 							width: 500%; /* to contain 5 panels, each with 100% of window width */
 							height: 100%;
+                        
 						}
 
 .panel {

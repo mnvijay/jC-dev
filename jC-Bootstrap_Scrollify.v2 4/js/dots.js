@@ -37,14 +37,14 @@ $(document).ready(function(){ // wait for document ready
 								.addTo(controller);
     
     new ScrollMagic.Scene({
-        duration: 6000,  // the scene should last for a scroll distance of 100px
+        duration: 5900,  // the scene should last for a scroll distance of 100px
                // start this scene after scrolling for 50px
     })
     .setPin("#bigPhone1") // pins the element for the the scene's duration
     .addTo(controller); 
     
     new ScrollMagic.Scene({
-        duration: 6000,  // the scene should last for a scroll distance of 100px
+        duration: 5900,  // the scene should last for a scroll distance of 100px
                // start this scene after scrolling for 50px
     })
     .setPin("#smallPhone2") // pins the element for the the scene's duration
@@ -135,7 +135,7 @@ $(document).ready(function(){ // wait for document ready
     
       // build tween Gig Section (For Tucking in)
        var tween6 = new TimelineMax()
-		.to("#smallPhone2", 1, {x: "+=55",y: "+=230"});
+		.to("#smallPhone2", 1, {x: "+=50",y: "+=230"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween6)
 					.addTo(controller);

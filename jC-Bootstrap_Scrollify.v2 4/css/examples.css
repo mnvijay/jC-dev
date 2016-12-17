@@ -986,6 +986,7 @@ a.viewsource:before {
 	height: 100%;
 	width: 100%;
 	background-image: none;
+    margin-top: -2px;
 }
 .demo#section-slides .panel, .demo#section-wipes .panel {
 	 background-color: rgba(219, 134, 35, 0.95 );
