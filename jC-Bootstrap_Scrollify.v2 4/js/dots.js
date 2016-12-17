@@ -1,5 +1,9 @@
 $(document).ready(function(){ // wait for document ready
-		// init
+    
+     $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+		// init           
 							var controller = new ScrollMagic.Controller();
 
 							// define movement of panels
@@ -37,7 +41,6 @@ $(document).ready(function(){ // wait for document ready
                // start this scene after scrolling for 50px
     })
     .setPin("#bigPhone1") // pins the element for the the scene's duration
-    
     .addTo(controller); 
     
     new ScrollMagic.Scene({
@@ -45,95 +48,102 @@ $(document).ready(function(){ // wait for document ready
                // start this scene after scrolling for 50px
     })
     .setPin("#smallPhone2") // pins the element for the the scene's duration
-   
     .addTo(controller);
+    
+
+    
     
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
     
-    new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"1000"})
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"1000"})
 					.setClassToggle("#bigPhone1ScreenArtists", "bigPhone1ScreenArtists1") // add class toggle
-                    .addIndicators()
 					.addTo(controller);
     
-    new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
-					.setClassToggle("#smallPhone3", "bands") // add class toggle
-				
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
+					.setClassToggle("#bigPhone1ScreenBands", "bigPhone1ScreenBands1") // add class toggle
 					.addTo(controller);
     
-      new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
-					.setClassToggle("#phone1", "playRoom") // add class toggle
-				
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
+					.setClassToggle("#smallPhone2ScreenBand", "smallPhone2ScreenBand1") // add class toggle
 					.addTo(controller);
-    new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
-					.setClassToggle("#phone1", "gigs") // add class toggle
-					
+    
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
+					.setClassToggle("#bigPhone1ScreenPlayRoom", "bigPhone1PlayRoom1") // add class toggle
 					.addTo(controller);
-    	
-	// build tween
+    
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
+					.setClassToggle("#bigPhone1ScreenGig", "bigPhone1Gig1") // add class toggle
+					.addTo(controller);
+    
+    var controller = new ScrollMagic.Controller();
+    
+        new ScrollMagic.Scene({delay:"5000",triggerHook: 'onEnter',offset:"6000"})
+					.setClassToggle("#bigPhone1ScreenJc", "bigPhone1ScreenJc1") // add class toggle
+                    
+					.addTo(controller);
+    
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+    
+
+    // x -= : to move the object to the left.
+    // x += : to move the object to the right. 
+    // y -= : to move the object up.
+    // y += : to move the object down. 
+    
+    // build tween One App Section (sPhone to left)
 	var tween = new TimelineMax()
-		.to("#smallPhone3", 1, {x: "+=55"});
-		
+		.to("#smallPhone2", 1, {x: "-=55"});
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"100"})
+                    .setTween(tween)
+					.addTo(controller);
+    
+    // build tween One App Section (bPhone to  right)
+    	var tween1 = new TimelineMax()
+		.to("#bigPhone1", 1, {x: "+=55"});
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"100"})
+                    .setTween(tween1)
+					.addTo(controller);
+    
+	// build tween Bands Section(MERGING) (sPhone to right)
+	var tween = new TimelineMax()
+		.to("#smallPhone2", 1, {x: "+=55"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
                     .setTween(tween)
-				
 					.addTo(controller);
     
+    // build tween Bands Section(MERGING) (bPhone to left)
     	var tween1 = new TimelineMax()
-		.to("#phone1", 1, {x: "-=55"});
-		
+		.to("#bigPhone1", 1, {x: "-=55"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2700"})
                     .setTween(tween1)
-				
 					.addTo(controller);
     
-    
+    // build tween Gigs Section (Slide) (sPhone to left)
     var tween2 = new TimelineMax()
-		.to("#smallPhone3", 1, {x: "-=55"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
+		.to("#smallPhone2", 1, {x: "-=55"});
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4800"})
                     .setTween(tween2)
-		
 					.addTo(controller);
     
+    // build tween Gigs Section (Slide) (bPhone to right)
     var tween3 = new TimelineMax()
-		.to("#phone1", 1, {x: "+=55"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4400"})
+		.to("#bigPhone1", 1, {x: "+=55"});
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4800"})
                     .setTween(tween3)
-				
 					.addTo(controller);
     
-      var tween4 = new TimelineMax()
-		.to("#smallPhone3", 1, {x: "+=55"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
-                    .setTween(tween4)
-					
-					.addTo(controller);
     
-    var tween5 = new TimelineMax()
-		.to("#phone1", 1, {x: "-=55"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5400"})
-                    .setTween(tween5)
-		
-					.addTo(controller);
-    
+      // build tween Gig Section (For Tucking in)
        var tween6 = new TimelineMax()
-		.to("#smallPhone3", 1, {y: "+=130"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
+		.to("#smallPhone2", 1, {x: "+=55",y: "+=230"});
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween6)
-	
 					.addTo(controller);
     
+    // build tween Gig Section (For Tucking in)
     var tween7 = new TimelineMax()
-		.to("#phone1", 1, {y: "+=130"});
-		
-                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5450"})
+		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=230"});	
+                new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween7)
-				
 					.addTo(controller);
-    
-    
 	});

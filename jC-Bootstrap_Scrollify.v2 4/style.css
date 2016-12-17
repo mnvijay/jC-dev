@@ -1,13 +1,16 @@
 * { 
   
 }
-
+ 
 @font-face{
     font-family: "Roboto Slab";
     src: url("fonts/roboto-slab/RobotoSlab-Light.ttf")
     
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 #bigPhone1{position: absolute;
     width: 400px;
@@ -41,9 +44,10 @@
     position: absolute;
     height: 325px;
     width:100%;
-    -webkit-transition: left 3s; 
+    -webkit-transition: left 1s; 
     transition: left 1s; 
     left:100%;
+    z-index:3;
 }
 
 #bigPhone1ScreenArtists.bigPhone1ScreenArtists1{ 
@@ -52,13 +56,78 @@
     
 }
  
+#bigPhone1ScreenBands{
+    position: absolute;
+    height: 314px;
+    width:100%;
+    -webkit-transition: left 1s; 
+    transition: left 1s; 
+    left:100%;
+    top:3%;
+    z-index:4;
+}
+
+#bigPhone1ScreenBands.bigPhone1ScreenBands1{ 
+    transition: ;
+    left:0%;
+    
+}
+ 
+#bigPhone1ScreenPlayRoom{
+    position: absolute;
+    height: 314px;
+    width:100%;
+    -webkit-transition: left 1s; 
+    transition: left 1s; 
+    left:100%;
+    top:3%;
+    z-index:5;
+}
+
+#bigPhone1ScreenPlayRoom.bigPhone1PlayRoom1{ 
+    transition: ;
+    left:0%;
+    
+}
+
+#bigPhone1ScreenGig{
+    position: absolute;
+    height: 314px;
+    width:100%;
+    -webkit-transition: left 1s; 
+    transition: left 1s; 
+    left:100%;
+    top:3%;
+    z-index:6;
+}
+
+#bigPhone1ScreenGig.bigPhone1Gig1{ 
+    transition: ;
+    left:0%;
+    
+}
+
+#bigPhone1ScreenJc{
+     position: absolute;
+    height: 325px;
+    width:100%;
+    -webkit-transition: bottom 3s; 
+    transition: bottom 3s; 
+    bottom:100%;
+    z-index:11;
+}
+
+#bigPhone1ScreenJc.bigPhone1ScreenJc1{  transition: ;
+    bottom:0%;
+    
+}
 
 #smallPhone2{
     position: absolute;
     width: 400px;
-    left:-1.5%;
+    left:25%;
     height: 55%;
-    top:15%;
+    top:13%;
     z-index: 8;
 }
 
@@ -66,40 +135,39 @@
     position: absolute;
     z-index:1;
     left:18%;
+    height:80% ;
 }
 
 #smallPhone2ScreenSlide{ 
    position: absolute;
    overflow: hidden;
-    height: 58%;
-    width:159px;
-    top: 4.3%;
-    left: 19%;
-}
-
-#smallPhone2Screen{
-    position: absolute;
-    height: 325px;
-    width:100%;
+    height: 267px;
+    width:38%;
+    top: 7.8%;
+    left:21%;
 }
 
 #smallPhone2ScreenArtists{
     position: absolute;
-    height: 325px;
+    height: 267px;
+    width:100%;  
+}
+
+#smallPhone2ScreenBand{
+    position: absolute;
+    height: 267px;
     width:100%;
-    -webkit-transition: left 3s; 
+    -webkit-transition: left 1s; 
     transition: left 1s; 
     left:100%;
+    z-index:3;
 }
 
-#smallPhone2ScreenArtists.bigPhone1ScreenArtists1{ 
+#smallPhone2ScreenBand.smallPhone2ScreenBand1{ 
     transition: ;
     left:0%;
+    
 }
- 
-
-
-
 
 html,body{
     width: 100%;
@@ -140,7 +208,6 @@ html,body{
     z-index: 100;
 }
 
-
 #logoText{
     margin-top:25px ;
     margin-left: 15px;
@@ -148,6 +215,7 @@ html,body{
     font-size: 26px;
     font-family: 'Pacifico', cursive;
 }
+
 #logoText:hover{
     color: yellow;
 }
@@ -202,8 +270,6 @@ html,body{
     margin-right: 100px;
 }
 
-
-
 #smallPhone3{
     position: absolute;
     z-index: 9; 
@@ -217,7 +283,6 @@ html,body{
     margin-top: 15%;
     z-index: 1;
 }
-
 
 #gigPhone1{
     position: absolute;
@@ -337,11 +402,11 @@ html,body{
 #footer{
 	background-color: #422b25;
     background-position: bottom;
-	box-shadow: 50px 42px 64px 59px #422b25, inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
-    background-attachment: scroll;
-    height: 200px;
+	box-shadow: 50px 42px 64px 59px #422b25, inset 0 1px 3px 0 rgba(0, 0, 0, 1);
+    
+    height: 230px;
     z-index: 10;
-    margin-top: 10%;
+    margin-top: 15%;
 
 }
 
@@ -384,6 +449,7 @@ html,body{
     text-align: center;
     margin-top: 5%;
 }
+
 .footerL2Icons{
 display: inline-block;
     padding: 10px;
@@ -409,6 +475,7 @@ display: inline-block;
     text-decoration: none;
    
 }
+
 #footerL3 li a#mail{
     cursor:text;
 }
@@ -421,30 +488,6 @@ display: inline-block;
     margin-top: 300px ;
 }
 
-.artists{
-  content:url("images/ArtistsPhone1.png");
-}
-
-.bands{
-    content:url("images/BandsPhone2.png");
-    width: 280px;
-   
-}
-
-.playRoom{
-    content:url("images/PlayRoomphone1.png");
-
-}
-
-.gigs{
-     content:url("images/GigsPhone1.png");
-}
-
-::-webkit-scrollbar { 
-    display: ; 
-}
-
-
 #pinContainer {
 							width: 100%;
 							height: 100%;
@@ -452,11 +495,13 @@ display: inline-block;
 							-webkit-perspective: 1000;
 							        perspective: 1000;
 						}
-						#slideContainer {
+
+#slideContainer {
 							width: 500%; /* to contain 5 panels, each with 100% of window width */
 							height: 100%;
 						}
-						.panel {
+
+.panel {
 							height: 100%;
 							width: 20%; /* relative to parent -> 20% of 500% = 100% of window width */
 							float: left;
