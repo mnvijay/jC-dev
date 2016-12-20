@@ -158,14 +158,14 @@ $(document).ready(function(){ // wait for document ready
     
       // build tween Gig Section (For Tucking in)
        var tween6 = new TimelineMax()
-		.to("#smallPhone2", 1, {x: "+=50",y: "+=350"});
+		.to("#smallPhone2", 1, {x: "+=70",y: "+=370"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween6)
 					.addTo(controller);
     
     // build tween Gig Section (For Tucking in)
     var tween7 = new TimelineMax()
-		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=350"});	
+		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=370"});	
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween7)
 					.addTo(controller);
