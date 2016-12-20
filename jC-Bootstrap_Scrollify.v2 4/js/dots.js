@@ -36,50 +36,71 @@ $(document).ready(function(){ // wait for document ready
 								 // add indicators (requires plugin)
 								.addTo(controller);
     
-    new ScrollMagic.Scene({
-        duration: 5900,  // the scene should last for a scroll distance of 100px
-               // start this scene after scrolling for 50px
+    new ScrollMagic.Scene({triggerHook: 'onEnter',
+        duration: 5400,  // the scene should last for a scroll distance of 5400px
     })
     .setPin("#bigPhone1") // pins the element for the the scene's duration
     .addTo(controller); 
     
     new ScrollMagic.Scene({
-        duration: 5900,  // the scene should last for a scroll distance of 100px
-               // start this scene after scrolling for 50px
+        duration: 5400,  // the scene should last for a scroll distance of 5400px
     })
     .setPin("#smallPhone2") // pins the element for the the scene's duration
     .addTo(controller);
     
-
+    new ScrollMagic.Scene({triggerHook: 'onEnter',
+        duration: 350,  // the scene should last for a scroll distance of 350px
+       offset: 5600    
+    })
+    .setPin("#bigPhone1") // pins the element for the the scene's duration
+    .addTo(controller); 
+    
+    new ScrollMagic.Scene({triggerHook: 'onEnter',
+        duration: 350,  // the scene should last for a scroll distance of 350px
+        offset: 5600
+    })
+    .setPin("#smallPhone2") // pins the element for the the scene's duration
+    .addTo(controller);
     
     
-    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+    var controller = new ScrollMagic.Controller();
+    
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"100"})
+					.setClassToggle(".jCBackground.logo", "top") // add class toggle
+					.addTo(controller);
     
         new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"1000"})
-					.setClassToggle("#bigPhone1ScreenArtists", "bigPhone1ScreenArtists1") // add class toggle
+					.setClassToggle(".rightScreen.art", "middleScreen") // add class toggle
+					.addTo(controller);
+
+    
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
+					.setClassToggle(".rightScreen.band", "middleScreen") // add class toggle
 					.addTo(controller);
     
         new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
-					.setClassToggle("#bigPhone1ScreenBands", "bigPhone1ScreenBands1") // add class toggle
-					.addTo(controller);
-    
-        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"2000"})
-					.setClassToggle("#smallPhone2ScreenBand", "smallPhone2ScreenBand1") // add class toggle
+					.setClassToggle(".rightScreen.art", "leftScreen") // add class toggle
 					.addTo(controller);
     
         new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
-					.setClassToggle("#bigPhone1ScreenPlayRoom", "bigPhone1PlayRoom1") // add class toggle
+					.setClassToggle(".rightScreen.band", "leftScreen") // add class toggle
+					.addTo(controller);
+    
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"3150"})
+					.setClassToggle(".rightScreen.playRoom", "middleScreen") // add class toggle
 					.addTo(controller);
     
         new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
-					.setClassToggle("#bigPhone1ScreenGig", "bigPhone1Gig1") // add class toggle
+					.setClassToggle(".rightScreen.gig", "middleScreen") // add class toggle
+					.addTo(controller);
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"4150"})
+					.setClassToggle(".rightScreen.playRoom", "leftScreen") // add class toggle
 					.addTo(controller);
     
     var controller = new ScrollMagic.Controller();
     
-        new ScrollMagic.Scene({delay:"5000",triggerHook: 'onEnter',offset:"6000"})
+        new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5800"})
 					.setClassToggle("#bigPhone1ScreenJc", "bigPhone1ScreenJc1") // add class toggle
-                    
 					.addTo(controller);
     
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
@@ -103,6 +124,8 @@ $(document).ready(function(){ // wait for document ready
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"100"})
                     .setTween(tween1)
 					.addTo(controller);
+    
+    
     
 	// build tween Bands Section(MERGING) (sPhone to right)
 	var tween = new TimelineMax()
@@ -135,14 +158,14 @@ $(document).ready(function(){ // wait for document ready
     
       // build tween Gig Section (For Tucking in)
        var tween6 = new TimelineMax()
-		.to("#smallPhone2", 1, {x: "+=50",y: "+=230"});
+		.to("#smallPhone2", 1, {x: "+=50",y: "+=350"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween6)
 					.addTo(controller);
     
     // build tween Gig Section (For Tucking in)
     var tween7 = new TimelineMax()
-		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=230"});	
+		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=350"});	
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween7)
 					.addTo(controller);
