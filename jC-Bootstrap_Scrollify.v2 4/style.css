@@ -1,22 +1,27 @@
-* { 
-  
+* {
 }
  
 @font-face{
     font-family: "Roboto Slab";
     src: url("fonts/roboto-slab/RobotoSlab-Light.ttf")
-    
+}
+
+@font-face{
+    font-family: "Pacifico";
+    src: url("fonts/Pacifico/Pacifico.ttf")   
 }
 
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-#bigPhone1{position: absolute;
+#bigPhone1{
+    
     width: 400px;
     margin-left: 50px;
     height: 450px;
     z-index: 9;
+    
 }
 
 #bigPhone1Bezel{
@@ -29,82 +34,66 @@
    position: absolute;
    overflow: hidden;
     height: 325px;
-    width:179px;
-    top: 75px;
-    left: 126px;
+    width:193px;
+    top: 74px;
+    left: 133px;
 }
 
-#bigPhone1Screen{
+
+.jCBackground{
     position: absolute;
     height: 325px;
     width:100%;
-}
-
-#bigPhone1ScreenArtists{
-    position: absolute;
-    height: 325px;
-    width:100%;
-    -webkit-transition: left 1s; 
-    transition: left 1s; 
-    left:100%;
-    z-index:3;
-}
-
-#bigPhone1ScreenArtists.bigPhone1ScreenArtists1{ 
-    transition: ;
     left:0%;
-    
-}
- 
-#bigPhone1ScreenBands{
-    position: absolute;
-    height: 314px;
-    width:100%;
-    -webkit-transition: left 1s; 
-    transition: left 1s; 
-    left:100%;
-    top:3%;
-    z-index:4;
+    -webkit-transition: bottom 3s; 
+    transition: bottom 3s; 
+    bottom:0%;
+    z-index:1;
 }
 
-#bigPhone1ScreenBands.bigPhone1ScreenBands1{ 
+.logo{
+    z-index: 7;
+}
+
+.top{  
     transition: ;
-    left:0%;
-    
+    bottom:100%;
 }
- 
-#bigPhone1ScreenPlayRoom{
+
+.art{
+     z-index: 6;
+}
+.band{
+    z-index: 5;
+}
+.playRoom{
+    z-index: 4;
+}
+.gig{
+    z-index: 3;
+}
+
+.rightScreen{
     position: absolute;
-    height: 314px;
-    width:100%;
-    -webkit-transition: left 1s; 
-    transition: left 1s; 
-    left:100%;
-    top:3%;
-    z-index:5;
+    height: 200px;
+    top:60px;
+    width:80%;
+    -webkit-transition: left 1s, top 1s, height 1s; 
+    transition: left 1s, top 1s, height 1s; 
+     left: 95%;
 }
-
-#bigPhone1ScreenPlayRoom.bigPhone1PlayRoom1{ 
-    transition: ;
-    left:0%;
-    
+.middleScreen{
+     transition: ;
+    left:10%;
+    top: 50px;
+    height: 235px;
 }
+.leftScreen{ 
+    transition: ; 
+    left:-75%;
+     top: 60px;
+    height: 200px;
 
-#bigPhone1ScreenGig{
-    position: absolute;
-    height: 314px;
-    width:100%;
-    -webkit-transition: left 1s; 
-    transition: left 1s; 
-    left:100%;
-    top:3%;
-    z-index:6;
-}
-
-#bigPhone1ScreenGig.bigPhone1Gig1{ 
-    transition: ;
-    left:0%;
-    
 }
 
 #bigPhone1ScreenJc{
@@ -116,7 +105,6 @@
     bottom:100%;
     z-index:11;
 }
-
 #bigPhone1ScreenJc.bigPhone1ScreenJc1{  transition: ;
     bottom:0%;
     
@@ -268,9 +256,13 @@ html,body{
 }
 
 #phoneBox{
-    margin-top: 7%;
+ 
+    margin-top: 100px;
     height: 550px;
     margin-right: 100px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    
 }
 
 #smallPhone3{
@@ -492,11 +484,15 @@ display: inline-block;
 							overflow: hidden;
 							-webkit-perspective: 1000;
 							        perspective: 1000;
+    
+                    
 						}
 
 #slideContainer {
 							width: 500%; /* to contain 5 panels, each with 100% of window width */
 							height: 100%;
+    
+                    
                         
 						}
 
