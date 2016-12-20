@@ -3,12 +3,12 @@
  
 @font-face{
     font-family: "Roboto Slab";
-    src: url("fonts/roboto-slab/RobotoSlab-Light.ttf")
+    src: url("/fonts/roboto-slab/RobotoSlab-Light.ttf")
 }
 
 @font-face{
     font-family: "Pacifico";
-    src: url("fonts/Pacifico/Pacifico.ttf")   
+    src: url("/fonts/Pacifico/Pacifico.ttf")   
 }
 
 ::-webkit-scrollbar { 
@@ -166,11 +166,11 @@ html,body{
 }
 
 #con1{
-    background: url("images/waves.png") no-repeat bottom,url("images/background.jpg") no-repeat;
+    background: url("/images/waves.png") no-repeat bottom,url("/images/background.jpg") no-repeat;
     background-size: 100% 50%, 100% 100%;
     background-attachment: scroll;
     height: 100vh;
-    position:
+    position:static;
 }
 
 #con2{
@@ -182,7 +182,7 @@ html,body{
 
 #con3{
     margin-top: 275%;
-    background: url("images/lastWave.png") no-repeat bottom;
+    background: url("/images/lastWave.png") no-repeat bottom;
     background-size:100% 90%;
     background-attachment: scroll;
     height: 100vh;
