@@ -3,6 +3,20 @@ $(document).ready(function(){ // wait for document ready
      $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
+    
+   $(window).scroll(function() {
+   var hT = $('#lastsection').offset().top,
+       hH = $('#lastsection').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       $("#m_tdb").hide();
+   }
+    else{
+       $("#m_tdb").show();
+ }
+});
+    
 		// init           
 							var controller = new ScrollMagic.Controller();
 
@@ -37,13 +51,13 @@ $(document).ready(function(){ // wait for document ready
 								.addTo(controller);
     
     new ScrollMagic.Scene({triggerHook: 'onEnter',
-        duration: 5400,  // the scene should last for a scroll distance of 5400px
+        duration: 400,  // the scene should last for a scroll distance of 400px
     })
     .setPin("#bigPhone1") // pins the element for the the scene's duration
     .addTo(controller); 
     
     new ScrollMagic.Scene({
-        duration: 5400,  // the scene should last for a scroll distance of 5400px
+        duration: 400,  // the scene should last for a scroll distance of 5400px
     })
     .setPin("#smallPhone2") // pins the element for the the scene's duration
     .addTo(controller);
@@ -158,7 +172,7 @@ $(document).ready(function(){ // wait for document ready
     
       // build tween Gig Section (For Tucking in)
        var tween6 = new TimelineMax()
-		.to("#smallPhone2", 1, {x: "+=70",y: "+=370"});
+		.to("#smallPhone2", 1, {x: "+=75",y: "+=370"});
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween6)
 					.addTo(controller);

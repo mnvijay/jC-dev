@@ -982,17 +982,17 @@ a.viewsource:before {
 	display: inline-block;
 }
 
-.demo#section-slides, .demo#section-wipes {
+ .demo#section-slides, .demo#section-wipes {
 	height: 100%;
 	width: 100%;
 	background-image: none;
     margin-top: -2px;
 }
-.demo#section-slides .panel, .demo#section-wipes .panel {
+ .demo#section-slides .panel, .demo#section-wipes .panel {
 	 background-color: rgba(219, 134, 35, 0.95 );
 }
 
-.demo#section-slides .panel > b, .demo#section-wipes .panel > b {
+ .demo#section-slides .panel > b, .demo#section-wipes .panel > b {
 	font-size: 15px;
 	color: white;
 	position: relative;

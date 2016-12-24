@@ -1,8 +1,319 @@
-* {
+body{
+     background-color: rgba(219, 134, 35, 0.95 );
+}
+#m_con1{
+    background:url("/images/waves.png") no-repeat,url("/images/background.jpg" ) no-repeat;
+    background-attachment:;
+    background-size:contain,cover;
+    background-position: bottom,0px 0px;
+    height: 67vh;
+    width: 100vw;
+}
+#m_welcomeTextBox{
+
 }
 
-@media(min-width:1220px){}
+#m_welcomeText{
+    
+    margin-top: 5em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: lightgrey;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 40px;
+    
+}
+
+#m_tryJc{
+    background: none;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    font-family: 'Pacifico', serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    width: 200px;
+    border-radius: 82px;
+    margin-top: 20px;`
+}
+
+#m_tryJc:hover{
+    background: orange;
+}
+
+.m_align{
+    text-align: center;
+}
+
+#m_bigPhone1{
+
+    height: 100%;
+    width: 100%;
+}
+
+a#chk {
+    position: absolute;
+    left: 50%;
+    top:;
+    margin-left: -150px;
+    max-width: 300px;
+}
  
+#m_logoText{
+    position: fixed;
+    margin-top:25px ;
+    margin-left: 15px;
+    color: white;
+    font-size: 26px;
+    font-family: 'Pacifico', cursive;
+    z-index: 1;
+}
+
+#logoText:hover{
+    color: yellow;
+}
+
+#m_tdb{
+    position: fixed;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 82px;
+    margin-top: 20px ;
+    z-index: 1;
+}
+
+#m_con2{
+    margin-top:-4px;
+   
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+#m_section2hp{
+    height:100%;
+    width:100%;
+    margin-top:20em;
+}
+
+.m_section2Header{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:30px ;
+    text-align: center;
+    width: 100%;
+    margin-left:;
+    font-weight: 300;
+}
+
+.m_section2p{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:20px ;
+    font-weight:300;
+    text-align: center;
+    margin-top: 1em ;
+    letter-spacing: 1px;
+    width:100%;
+    margin-left:;
+}
+       
+#m_scrolldown.btn{
+    background: none;
+    font-size: 1.5em;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;   
+    padding-top: 20px;
+    position: absolute;
+    left: 50%;
+    top:40vh;
+    width: 70px;
+    height: 70px;
+    margin-left:-30px;
+    margin-top: 1em;
+}  
+    
+.m_con3{
+     height: 100vh;
+     width: 100%;
+    margin-top: 15%;
+}   
+
+.m_P12{
+    height: 100%;
+    width: 100%;
+    margin-top: 15%;
+}
+       
+.m_P1{
+    position: absolute;
+    left:40%;
+    margin-left: -50px;
+}
+.m_P2{
+    position: absolute;
+    left:40%;
+    margin-left: -130px;
+    margin-top:40px ;
+}
+
+.m_section3hp{
+    height:100%;
+    width:100%;
+    margin-top:26em;
+}
+
+.m_section3Header{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:30px ;
+    text-align: center;
+    width: 100%;
+    margin-left:;
+    font-weight: 300;
+}
+
+.m_section3p{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size:20px ;
+    font-weight:300;
+    text-align: center;
+    margin-top: 1em ;
+    letter-spacing: 1px;
+    width:100%;
+    margin-left:;
+}
+
+.m_playRoom{
+    left: 50%;
+    margin-left: -150px;
+    height: 430px;
+}
+
+.m_gigs{
+     left: 50%;
+    margin-left: -130px;
+    height: 430px;
+}
+
+.m_gigsBackground{ 
+    height: 100vh;
+    width: 100%;
+    margin-top: 15%;
+    background:url("/images/lastWave.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.m_gigSectionHeader{
+    font-size: 25px;
+    margin-top: -10%;
+}
+
+.m_gigsP{
+    font-size: 19px;
+}
+
+#m_playStore{
+    margin-top: 2em;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.m_footerTop{
+    width: 100vw;
+    height: 50vh;
+}
+
+.m_alignment{
+    
+    margin-top: 3em;
+}
+
+
+#m_footer{
+	background-color: #422b25;
+    height: 100%;
+    z-index: 10;    
+}
+
+
+#m_footerL1{
+  
+    margin-top: 1em;
+}
+
+#m_footerL1 li{
+    line-height: 20px;
+      text-align: center;
+}
+
+#m_footerL1 li a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    cursor:pointer;
+  
+}
+
+
+.m_footerL2H2{
+    font-family: 'Roboto Slab',serif;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 4em;
+    font-weight: 100;
+}
+
+#m_footerL2IconsBox{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.m_footerL2Icons{
+display: inline-block;
+    padding: 10px;
+}
+
+#m_footerL3{
+  
+    margin-top: 1em;
+    height: 120px;
+    margin-right: ;
+}
+
+#m_footerL3 li{
+    line-height: 20px;
+    text-align: center;
+}
+
+#m_footerL3 li a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+   
+}
+
+#m_footerL3 li a#m_mail{
+    cursor:text;
+}
+
+
+
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,20 +340,6 @@ html * {
     display: none; 
 }
 
-#bigPhone1{
-    
-    width: 400px;
-    margin-left: 50px;
-    height: 450px;
-    z-index: 9;
-    
-}
-
-#bigPhone1Bezel{
-    position: absolute;
-    z-index: ;
-    left: 11.5%;
-}
 
 #bigPhone1ScreenSlide{ 
    position: absolute;
@@ -175,24 +472,11 @@ html,body{
     width: 100vw;
     height:100%;
     margin:0;
-    background-color: rgba(219, 134, 35, 0.95 );
+    
    
 }
 
-#con1{
-    background: url("/images/waves.png") no-repeat bottom,url("/images/background.jpg") no-repeat;
-    background-size: 100% 50%, 100% 100%;
-    background-attachment: scroll;
-    height: 100vh;
-    position:static;
-}
 
-#con2{
-    margin-top:-4px;
-    background-color: rgba(219, 134, 35, 0.95 );
-    height: 100vh;
-    z-index: 1;
-}
 
 #con3{
     margin-top: 275%;
@@ -209,29 +493,7 @@ html,body{
     z-index: 100;
 }
 
-#logoText{
-    margin-top:25px ;
-    margin-left: 15px;
-    color: white;
-    font-size: 26px;
-    font-family: 'Pacifico', cursive;
-}
 
-#logoText:hover{
-    color: yellow;
-}
-
-#tdb{
-    background: none;
-    color: white;
-    border: 1px solid white;
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border-radius: 82px;
-    margin-top: 20px ;
-
-}
 
 #welcomeTextBox{
     margin-top:11% ;
@@ -307,34 +569,7 @@ html,body{
     z-index: 0;
 }
 
-#section2hp{
-    height:100%;
-    width:90%;
-    margin-top: 27%;
-    
-}
 
-.section2Header{
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    font-size:30px ;
-    text-align: right;
-    width: 50%;
-    margin-left:45% ;
-    font-weight: 300;
-}
-
-.section2p{
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    font-size:20px ;
-    font-weight:300;
-    text-align: right;
-    margin-top: 3% ;
-    letter-spacing: 1px;
-    width:660px;
-    margin-left:41%;
-}
 
 #section5hp{
     height:100%;
@@ -407,7 +642,14 @@ html,body{
     margin-left: 65%;
     margin-top: 3%;
 }
-
+#con5{
+    margin-top: 20%;
+    z-index: 100;
+    min-width: 100%; 
+    min-height:100%;
+    height: 100%;
+    position:relative;`
+}
 #footer{
 	background-color: #422b25;
     background-position: bottom;
@@ -419,14 +661,7 @@ html,body{
     position: absolute;
 }
 
-#con5{
-    margin-top: 20%;
-    z-index: 100;
-    min-width: 100%; 
-    min-height:100%;
-    height: 100%;
-    position:relative;`
-}
+
 #footerL1{
   
     margin-top: 10%;
@@ -664,3 +899,4 @@ ul.move li {
             transform: translateY(-25%);
   } */
 }
+
