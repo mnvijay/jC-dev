@@ -17,6 +17,19 @@ $(document).ready(function(){ // wait for document ready
  }
 });
     
+   /* $(window).scroll(function() {
+   var hT = $('#m_con2').offset().top,
+       hH = $('#m_con2').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       $("#fixed").addClass("navbar");
+   }
+    else{
+       $("#fixed").removeClass("navbar");
+ }
+}); */
+    
 		// init           
 							var controller = new ScrollMagic.Controller();
 

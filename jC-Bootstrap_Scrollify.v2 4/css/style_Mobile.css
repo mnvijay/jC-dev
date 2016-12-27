@@ -1,6 +1,36 @@
-body{
+@media (max-width:480px){
+    #m_tdb{
+        margin-left: 57vw;
+    }
+    
+}
+
+@media(min-width:480px) and (max-width:780px){
+    #m_tdb{
+        margin-left: 80vw;
+    }
+}
+
+body,html{
      background-color: rgba(219, 134, 35, 0.95 );
 }
+
+#fixed{
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    z-index: 1;
+}
+
+
+.navbar{
+    position: fixed;
+    background-color: rgba(219, 134, 35, 1 );
+    z-index: 1;
+    height: 70px;
+    width: 100vw;
+}
+
 #m_con1{
     background:url("/images/waves.png") no-repeat,url("/images/background.jpg" ) no-repeat;
     background-attachment:;
@@ -87,6 +117,7 @@ a#chk {
     border-radius: 82px;
     margin-top: 20px ;
     z-index: 1;
+    
 }
 
 #m_con2{
