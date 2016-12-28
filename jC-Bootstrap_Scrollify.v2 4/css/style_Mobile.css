@@ -1,3 +1,60 @@
+@media (max-width:320px){
+    
+    .m_section3hp{
+        margin-top:24em;}
+    
+    .m_section3Header{
+        font-size: 20px;}
+     
+    .m_section3p{
+        font-size: 15px;}
+    
+    .m_footerL2H2{
+        margin-top: 1em;}
+    
+    #m_footerL3{
+    height: 100%;}
+    
+    .m_alignment{
+        margin-top: 4.8em;}
+    
+    .m_gigSectionHeader{
+        font-size: 20px;
+        margin-top: 18.5em}
+
+    .m_gigsP{
+        font-size: 14px;}
+}
+
+@media (min-width:321px){
+    .m_footerL2H2{
+        margin-top: 4.5em;} 
+    
+    .m_section3hp{
+        margin-top:26em;}
+
+    .m_section3Header{
+        font-size: 30px;}
+    
+    .m_section3p{
+        font-size:19px;}
+    
+    #m_footerL3{
+    height: 120px;
+    margin-top: 3em;}
+    
+    .m_alignment{
+        margin-top: 3em;}
+    
+    .m_gigSectionHeader{
+        font-size: 25px;
+        margin-top: 15em;}
+
+    .m_gigsP{
+        font-size: 19px;}
+}
+
+
 @media (max-width:480px){
     #m_tdb{
         margin-left: 57vw;
@@ -5,13 +62,14 @@
     
 }
 
+
 @media(min-width:480px) and (max-width:780px){
     #m_tdb{
         margin-left: 80vw;
     }
 }
 
-body,html{
+body, html{
      background-color: rgba(219, 134, 35, 0.95 );
 }
 
@@ -198,13 +256,11 @@ a#chk {
 .m_section3hp{
     height:100%;
     width:100%;
-    margin-top:26em;
 }
 
 .m_section3Header{
     font-family: 'Roboto Slab', serif;
     color: white;
-    font-size:30px ;
     text-align: center;
     width: 100%;
     margin-left:;
@@ -214,7 +270,6 @@ a#chk {
 .m_section3p{
     font-family: 'Roboto Slab', serif;
     color: white;
-    font-size:20px ;
     font-weight:300;
     text-align: center;
     margin-top: 1em ;
@@ -235,6 +290,7 @@ a#chk {
     height: 430px;
 }
 
+
 .m_gigsBackground{ 
     height: 100vh;
     width: 100%;
@@ -245,12 +301,10 @@ a#chk {
 }
 
 .m_gigSectionHeader{
-    font-size: 25px;
-    margin-top: -10%;
+
 }
 
 .m_gigsP{
-    font-size: 19px;
 }
 
 #m_playStore{
@@ -265,10 +319,7 @@ a#chk {
     height: 50vh;
 }
 
-.m_alignment{
-    
-    margin-top: 3em;
-}
+
 
 
 #m_footer{
@@ -303,7 +354,6 @@ a#chk {
     color: white;
     font-size: 12px;
     text-align: center;
-    margin-top: 4em;
     font-weight: 100;
 }
 
@@ -320,8 +370,6 @@ display: inline-block;
 #m_footerL3{
   
     margin-top: 1em;
-    height: 120px;
-    margin-right: ;
 }
 
 #m_footerL3 li{
